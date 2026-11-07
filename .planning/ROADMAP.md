@@ -1,33 +1,41 @@
-# Roadmap: Luxury Real Estate & Construction Landing Page
+# Project Roadmap: Leon Home Landing Page
 
-- [x] **Phase 1: Project Intake & Design System Tokens**
-  - Define CSS tokens for color palette, editorial serif typography, glassmorphism, spacing, and 6-state interactions.
-  - Establish reset and base styles adhering to Hallmark and Impeccable guidelines.
+## Milestones & Phases
 
-- [x] **Phase 2: Section 1 — Hero with Layered 3D Depth**
-  - 24px rounded hero container with full-bleed dusk cliffside architectural imagery.
-  - Floating top navigation bar with brand logo, 5 pill nav links ("Home" active in solid white, 4 in frosted glass), 3 frosted circular social buttons, and solid white pill phone CTA.
-  - Uppercase sans-serif subheading ("Upgrade your life with smart home technology").
-  - Center-spanning giant uppercase serif "LEON HOME" text masked behind foreground architectural roof and elements.
-  - Two floating dark frosted glass stat cards ("5.9K+" and "10K+") on right half.
-  - Centered solid white pill bottom CTA ("DISCOVER MORE" with circular black arrow icon).
+- [x] **Phase 1: Project Setup & Repository Sanitization**
+  - [x] Purge all legacy copyright files
+  - [x] Initialize clean git working tree and planning state
 
-- [x] **Phase 3: Section 2 — Value Proposition (3-Column Asymmetric Grid)**
-  - Centered two-line serif title ("Experience Excellence / In Real Estate").
-  - Left column: bold subtitle, muted gray paragraph, solid black pill CTA ("About Us"), "Our Partner:" label with 3 grayscale partner logos.
-  - Center column: 3/4 aspect-ratio vertical rounded image of luxury coastal pool at twilight.
-  - Right column: stacked feature blocks ("Expert Guidance" & "Wide Property Selection") with 1px dividers, and bottom "Reviews" block with 3 overlapping avatars, dark rating badge, and "4.9 Customer Ratings".
+- [ ] **Phase 2: Design System & CSS Token Architecture**
+  - [ ] Establish `:root` tokens for colors, typography, elevations, spacing, and radii
+  - [ ] Configure Playfair Display & Plus Jakarta Sans typography scale
+  - [ ] Implement glassmorphism tokens and composite transition rules
 
-- [x] **Phase 4: Section 3 — Team Showcase (Full-Width Black Band)**
-  - Full-width #000000 background section with generous padding.
-  - Left side (60%): 3-column row of vertical rounded portrait cards with member name and gray role below each, plus dark fade gradient over left edge.
-  - Right side (40%): white serif heading ("Meet Our Expert Team"), muted gray description, solid white pill CTA ("View All").
+- [ ] **Phase 3: Hero Section Implementation**
+  - [ ] Rounded full-bleed container with architectural twilight imagery
+  - [ ] Floating frosted glass navigation bar with pill cluster and phone pill
+  - [ ] 3D layered giant "LEON HOME" serif typography with roofline integration
+  - [ ] Floating dark frosted glass metric cards ("5.9K+", "10K+")
+  - [ ] Centered bottom "DISCOVER MORE" pill with arrow glyph
 
-- [x] **Phase 5: Section 4 — Featured Projects Carousel & Footer**
-  - Header row: 2-column split with left-aligned two-line serif title ("Find Your Dream Home Today") and right-aligned intro paragraph.
-  - Interactive carousel track: 3-card layout (center card 50% width, opaque; side cards smaller, faded with white gradient overlay).
-  - Card structure: rounded image container with top-left frosted glass pill ("Available Property" + green status dot), and flex bottom row with title ("Modern Family Home") and price ("$4,500,000" / "$4,500,00").
-  - Complete editorial footer, keyboard accessibility, and mobile responsiveness.
+- [ ] **Phase 4: Value Proposition Grid (3-Column Asymmetric)**
+  - [ ] Centered editorial heading "Experience Excellence In Real Estate"
+  - [ ] Left column: trusted partner story, "About Us" black pill, partner logos
+  - [ ] Center column: tall 3:4 vertical architectural photograph
+  - [ ] Right column: stacked guidance features with 1px dividers and customer ratings block
 
-- [x] **Phase 6: Quality Verification & Anti-Slop Audit**
-  - Ran `sloplint.mjs` against `index.html`, `styles.css`, `tokens.css`, and `base.css`: 0 FAILURES.
+- [ ] **Phase 5: Team Showcase (Stark Black Inset Container)**
+  - [ ] High-contrast black container with refined padding
+  - [ ] 3 vertical portrait cards with left edge gradient fade and metadata
+  - [ ] Right-side editorial copy and "View All" pill CTA
+
+- [ ] **Phase 6: Featured Projects Carousel**
+  - [ ] Split editorial heading row with balanced text
+  - [ ] 3-card slider with center focus, scale difference, and edge gradient fades
+  - [ ] Top-left frosted glass "Available Property" badges and price metadata
+  - [ ] Interactive sliding controls & keyboard navigation
+
+- [ ] **Phase 7: Impeccable Polish, Audit & GitHub Deployment**
+  - [ ] 6-state interactive component verification
+  - [ ] Mobile & tablet responsive adaptations
+  - [ ] Clean commit and push to `certifiedtechidiot/test1_myskill`

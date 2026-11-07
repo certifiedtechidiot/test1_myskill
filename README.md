@@ -1,71 +1,72 @@
-# LEON HOME — Luxury Real Estate & Architectural Construction
+# Leon Home — Luxury Construction & Real Estate Landing Page
 
-A modern, editorial luxury construction and real estate landing page featuring high-contrast editorial layouts, glassmorphic UI elements, and layered 3D typography.
-
-Built using the **Hallmark** design framework and verified with `sloplint` for zero-slop craft standards.
+A pixel-perfect, editorial-grade implementation of the luxury construction and architectural real estate brand **Leon Home**, adhering strictly to the **Unified Web Development Engine** (GSD spec-driven workflow, Hallmark Anti-AI-Slop standard, AI Design conversion principles, Taste Skill 2.5 screen rhythm, Impeccable director craft, and OpenDesign token discipline).
 
 ---
 
-## 🌟 Key Features
+## 🎨 Global Design System & Tokens
 
-1. **Layered 3D Depth Hero**:
-   - Ultra-modern cliffside architecture visual at dusk with 24px container radius.
-   - Giant uppercase serif typography (`LEON HOME`) spanning full width, physically masked behind cantilevered concrete roof slabs and coastal foliage for true foreground depth.
-   - Floating dark glass stat cards (`5.9K+` and `10K+`) with frosted overlays (`rgba(255, 255, 255, 0.15)` & `backdrop-filter: blur(12px)`).
-   - Centered solid white discovery pill CTA with circular arrow badge.
-
-2. **Top Floating Navigation**:
-   - High-contrast frosted glass pill cluster with active solid pill state.
-   - Frosted circular social icons (LinkedIn, Instagram, X).
-   - Direct concierge contact pill (`+1 (800) 458-2900`).
-
-3. **Value Proposition (3-Column Asymmetric Grid)**:
-   - Centered 2-line serif title on pure white background.
-   - Left column: bold subtitle, narrative, solid pill CTA, and recognized architectural partner emblems (`ARCH-DIGEST`, `FOSTER+CO`, `DEZEEN`).
-   - Center column: 3:4 vertical card showcasing a luxury coastal property with lit pool at twilight.
-   - Right column: stacked feature blocks (`Expert Guidance`, `Wide Property Selection`) and reviews counter with overlapping customer avatars and `4.9` rating badge.
-
-4. **Team Showcase (Full-Width Black Band)**:
-   - High-contrast stark black (`#0a0a0a`) editorial band.
-   - 3-column portrait cards with dark gradient edge fade over the first card.
-   - Principal architect and leadership profiles with paired serif headline block and white pill button.
-
-5. **Featured Projects Carousel**:
-   - 2-column header row with title and intro text.
-   - Horizontal showcase with active center card (50% width, fully opaque) and cropped, faded side cards.
-   - Available property status badge with live emerald indicator dot and price display.
-   - Accessible keyboard and button controls.
+* **Color Palette**:
+  - Pure White Canvas: `#FFFFFF` (`--color-bg-white`)
+  - Stark Black Contrast Section: `#0A0A0B` / `#000000` (`--color-bg-black`)
+  - Charcoal Primary Typography: `#111111` (`--color-text-primary`)
+  - Muted Editorial Gray: `#666666` (`--color-text-muted`)
+  - Light Slate Muted: `#9CA3AF` (`--color-text-light-muted`)
+  - Glass Overlays: `rgba(255, 255, 255, 0.12)` with `backdrop-filter: blur(16px)`
+  - Dark Frosted Glass Cards: `rgba(18, 20, 26, 0.55)` with `backdrop-filter: blur(18px)`
+* **Typography**:
+  - Headings & Editorial Titles: **Playfair Display** (High-contrast editorial serif)
+  - UI, Meta, Badges & Body: **Plus Jakarta Sans** (Geometric modern sans-serif)
+* **Corner Radii**:
+  - Hero Outer Container: `28px` (`--radius-hero`)
+  - Feature & Team Cards: `18px` (`--radius-card`)
+  - Pill Buttons & Status Badges: `9999px` (`--radius-pill`)
 
 ---
 
-## 🛠️ Tech Stack & Standards
+## 🏛️ Layout & Section Architecture
 
-- **Semantic HTML5** & **Modern CSS3** (CSS Custom Properties declared at `:root`).
-- **Typography**: `Playfair Display` (High-contrast editorial serif) & `Plus Jakarta Sans` (Geometric sans-serif).
-- **Zero-Dependency Vanilla JavaScript** for interactive carousel and smooth navigation.
-- **Accessibility & Compliance**: Strict `:focus-visible` styling, `:active`/`:disabled` states, reduced motion fallbacks, and 0 sloplint errors.
+### 1. Hero Section (Rounded Container, Full-Bleed Architectural Image)
+- **Floating Top Bar**: Frosted glass navigation with white serif logo, pill link cluster (solid white active "Home" indicator), circular glass social buttons (LinkedIn, Instagram, X), and solid white phone concierge pill (`+02 390.548.008`).
+- **Layered 3D Typography**:
+  - Top-left uppercase sans-serif tagline: *"UPGRADE YOUR LIFE WITH SMART HOME TECHNOLOGY"* with coordinates sub-label.
+  - Full-width giant uppercase serif brand title: *"LEON HOME"* visually layered behind the cantilevered roofline and pine tree silhouette for genuine 3D architectural depth.
+- **Floating Dark Frosted Glass Metric Cards**:
+  - Upper-Right: `"5.9K+"` with description *"Purposefully delivering innovative projects around the world."*
+  - Lower-Right: `"10K+"` with description *"Award-winning innovative projects delivered globally."*
+  - Animated on scroll with interactive micro-hover elevations.
+- **Bottom CTA**: Centered white pill button *"DISCOVER MORE"* with circular black right-arrow icon and smooth scroll transition.
+
+### 2. Value Proposition (3-Column Asymmetric Grid on White)
+- **Header**: Centered 2-line editorial serif heading: *"Experience Excellence In Real Estate"*.
+- **Left Column**: Subheading *"Your Trusted Partner in Finding the Perfect Home"*, editorial copy, black pill button *"About Us"*, and *"Our Partner:"* row featuring **Polymoth**, **BoldShift**, and **Quotient** grayscale emblems.
+- **Center Column**: Tall vertical 3:4 aspect-ratio photo frame showcasing a luxury cliffside villa overlooking the ocean at sunset.
+- **Right Column**: Two stacked feature items (*"Expert Guidance"*, *"Wide Property Selection"*) separated by 1px subtle divider lines, plus customer reviews block with 3 overlapping avatars and `4.9 Customer Ratings`.
+
+### 3. Team Section (Full-Width Stark Black Container)
+- **Container**: Stark black background (`#0A0A0B`), rounded corners (`24px`), expansive padding.
+- **Left (60%)**: 3 vertical portrait cards with rounded corners (`18px`), featuring **David Alex** (*Head Manager* — with subtle left-edge dark gradient vignette), **Tiana Korsgaard** (*Sales Marketing*), and **Tiana Dorin** (*Property Agent*).
+- **Right (40%)**: Vertically centered serif heading *"Meet Our Expert Team"*, light muted description, and pure white pill CTA button *"View All"*.
+
+### 4. Featured Projects Carousel (White Background)
+- **Header**: Split row with left-aligned 2-line serif title (*"Find Your Dream Home Today"*) and right-aligned descriptive paragraph.
+- **Interactive 3-Card Carousel**: Center card is large, high-contrast, and focused (*"Modern Family Home" — $4,500,00*), while flanking cards (*"Sunset Modern Villa" — $1,620,00* and *"Luxury Beachfront Villa" — $2,850,00*) are scaled down with outer edge gradient masks.
+- **Card Badges**: Frosted glass `"Available Property"` pills with solid white status indicators.
+- **Controls**: Interactive prev/next navigation buttons, active indicator dots, click-to-center functionality, touch swipe gestures, and keyboard arrow key navigation.
 
 ---
 
 ## 🚀 Running Locally
 
+No dependencies required! You can open `index.html` directly in any modern browser, or launch the built-in HTTP server:
+
 ```bash
-# Start local Node.js static preview server
+# Using Node.js
 node serve.js
+# Open http://localhost:3000 in your browser
 ```
-Open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
----
-
-## 📁 Repository Structure
-
-```
-├── index.html              # Main landing page markup
-├── styles.css              # Custom editorial stylesheet
-├── tokens.css              # Global design tokens (colors, fonts, radii, spacing)
-├── base.css                # Base reset & accessibility rules
-├── app.js                  # Carousel logic & smooth scrolling
-├── serve.js                # Local HTTP preview server
-├── BUSINESS_CONTEXT.md     # Business profile & precast engineering dossier
-└── README.md               # Project documentation
+Or using Python:
+```bash
+python -m http.server 3000
 ```

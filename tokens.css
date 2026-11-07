@@ -1,161 +1,126 @@
-/* Hallmark · shape: tokens · genre: modern-minimal · surface: absolute · posture: restrained · theme: modern-minimal
- * nav: floating glass · footer: editorial columns · signature: 3d layered hero
- */
+/* ==========================================================================
+   LEON HOME DESIGN SYSTEM TOKENS
+   Hallmark & Impeccable Spec-Compliant Token Architecture
+   Zero Raw Hex Values in Component Code
+   ========================================================================== */
 
 :root {
-  /* ==========================================================================
-     GLOBAL DESIGN SYSTEM: LEON HOME LUXURY REAL ESTATE & CONSTRUCTION
-     ========================================================================== */
+  /* Color Palette - Neutrals & Surfaces */
+  --color-bg-canvas: #FBF9F5;
+  --color-bg-white: #FFFFFF;
+  --color-bg-black: #0A0A0B;
+  --color-bg-surface-dark: #121316;
+  --color-bg-surface-card: #18191E;
 
-  /* Surface & Base Palette (High-Contrast Editorial) */
-  --color-paper: #FFFFFF;
-  --color-paper-2: #F9FAFB;
-  --color-paper-3: #F3F4F6;
-  
-  --color-ink: #111111;
-  --color-ink-2: #27272A;
-  --color-ink-light: #FFFFFF;
-  --color-muted: #666666;
-  --color-muted-light: #9CA3AF;
-  --color-muted-dark: #A1A1AA;
+  /* Typography Colors */
+  --color-text-primary: #111111;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #666666;
+  --color-text-light-muted: #9CA3AF;
+  --color-text-white: #FFFFFF;
+  --color-text-white-dim: rgba(255, 255, 255, 0.75);
+  --color-text-white-subtle: rgba(255, 255, 255, 0.5);
 
-  --color-contrast-black: #000000;
-  --color-section-dark: #000000;
-  --color-section-dark-elevated: #141820;
-  --color-dark-surface: #08090C;
-  --color-dark-surface-2: #141820;
-  --color-dark-surface-3: #18181B;
+  /* Glassmorphism & Overlays */
+  --color-glass-hero-nav: rgba(255, 255, 255, 0.12);
+  --color-glass-hero-nav-hover: rgba(255, 255, 255, 0.22);
+  --color-glass-card: rgba(18, 20, 26, 0.55);
+  --color-glass-card-border: rgba(255, 255, 255, 0.14);
+  --color-glass-badge-bg: rgba(255, 255, 255, 0.22);
+  --color-glass-badge-border: rgba(255, 255, 255, 0.28);
+  --color-glass-badge-text: #FFFFFF;
 
-  --color-fade-black: #000000;
-  --color-fade-black-85: rgba(0, 0, 0, 0.85);
+  /* Borders & Dividers */
+  --color-border-subtle: #EAEAEF;
+  --color-border-divider: #EEEEF2;
+  --color-border-glass: rgba(255, 255, 255, 0.18);
+  --color-border-glass-subtle: rgba(255, 255, 255, 0.08);
 
-  --color-card-overlay-top: rgba(255, 255, 255, 0.25);
-  --color-card-overlay-bot: rgba(255, 255, 255, 0.45);
-  --color-white-fade: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.6) 100%);
-  --color-overlay-backdrop: rgba(8, 9, 12, 0.85);
+  /* Accent & Interactive States */
+  --color-interactive-primary: #111111;
+  --color-interactive-primary-hover: #262626;
+  --color-interactive-active: #000000;
+  --color-focus-ring: rgba(0, 0, 0, 0.35);
+  --color-focus-ring-light: rgba(255, 255, 255, 0.6);
 
-  --color-scrim-1: rgba(6, 8, 12, 0.55);
-  --color-scrim-2: rgba(6, 8, 12, 0.15);
-  --color-scrim-3: rgba(6, 8, 12, 0.2);
-  --color-scrim-4: rgba(6, 8, 12, 0.75);
-  --color-scrim-light: rgba(6, 8, 12, 0.15);
-  --color-scrim-mid: rgba(6, 8, 12, 0.45);
-  --color-scrim-dark: rgba(6, 8, 12, 0.75);
-  --color-scrim-solid: rgba(6, 8, 12, 0.95);
+  /* Typography Scales */
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  --color-rule: rgba(0, 0, 0, 0.08);
-  --color-rule-subtle: #E5E7EB;
-  --color-rule-dark: rgba(255, 255, 255, 0.14);
-  --color-rule-dark-strong: rgba(255, 255, 255, 0.28);
-
-  --color-accent: #111111;
-  --color-accent-ink: #FFFFFF;
-  --color-focus: #111111;
-  --color-focus-light: #FFFFFF;
-  --color-status-active: #10B981;
-  --color-status-dot: #10B981;
-  --color-status-glow: rgba(16, 185, 129, 0.35);
-  --color-text-shadow: rgba(0, 0, 0, 0.5);
-
-  /* Frosted Glass Tokens */
-  --glass-bg: rgba(255, 255, 255, 0.15);
-  --glass-bg-hover: rgba(255, 255, 255, 0.25);
-  --glass-border: rgba(255, 255, 255, 0.25);
-  --glass-border-hover: rgba(255, 255, 255, 0.45);
-  --glass-blur: blur(12px);
-
-  --color-glass: rgba(255, 255, 255, 0.15);
-  --color-glass-border: rgba(255, 255, 255, 0.25);
-  --color-glass-hover: rgba(255, 255, 255, 0.25);
-
-  --glass-dark-bg: rgba(18, 18, 20, 0.72);
-  --glass-dark-bg-hover: rgba(28, 28, 32, 0.85);
-  --glass-dark-border: rgba(255, 255, 255, 0.16);
-  --glass-dark-blur: blur(16px);
-
-  --color-glass-dark: rgba(18, 18, 20, 0.72);
-  --color-glass-dark-border: rgba(255, 255, 255, 0.16);
-
-  /* Typography */
-  --font-display: "Playfair Display", "Cormorant Garamond", "Didot", serif;
-  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
-  --font-body: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-outlier: var(--font-body);
-
-  /* Type Scale */
+  /* Font Sizes */
   --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-md: 1rem;        /* 16px */
-  --text-lg: 1.125rem;    /* 18px */
-  --text-xl: 1.25rem;     /* 20px */
-  --text-2xl: 1.5rem;     /* 24px */
-  --text-3xl: 2rem;       /* 32px */
-  --text-4xl: 2.5rem;     /* 40px */
-  --text-title: clamp(1.25rem, 1.8vw, 1.75rem);
-  --text-hero-giant: clamp(4rem, 13vw, 13rem);
-  --text-display-giant: clamp(4.5rem, 13vw, 13.5rem);
-  --text-section-title: clamp(2rem, 3.8vw, 3.5rem);
+  --text-sm: 0.84375rem;  /* 13.5px */
+  --text-base: 0.9375rem; /* 15px */
+  --text-md: 1.0625rem;   /* 17px */
+  --text-lg: 1.25rem;     /* 20px */
+  --text-xl: 1.5rem;      /* 24px */
+  --text-2xl: 1.875rem;   /* 30px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-4xl: 2.75rem;    /* 44px */
+  --text-5xl: 3.5rem;     /* 56px */
+  --text-hero-giant: clamp(4.5rem, 13.5vw, 12.5rem);
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 
   /* Letter Spacing */
   --tracking-tight: -0.025em;
+  --tracking-snug: -0.015em;
   --tracking-normal: 0em;
   --tracking-wide: 0.04em;
-  --tracking-wider: 0.1em;
-  --tracking-widest: 0.18em;
-  --tracking-display: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.14em;
 
-  /* Border Radii */
-  --radius-hero: 24px;
-  --radius-card: 16px;
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.12;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-card: 18px;
+  --radius-section: 24px;
+  --radius-hero: 28px;
   --radius-pill: 9999px;
-  --radius-avatar: 50%;
+  --radius-full: 50%;
 
-  /* Spacing Scale (Strict 4px/8px multiples) */
-  --space-3xs: 2px;
-  --space-2xs: 4px;
-  --space-xs: 8px;
-  --space-sm: 12px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
-  --space-3xl: 64px;
-  --space-4xl: 96px;
-  --space-5xl: 128px;
+  /* Spacing Scale (4px/8px Grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
 
-  /* Layout Containers */
-  --container: 1400px;
-  --container-hero: 1440px;
-  --gutter: 32px;
-  --gap-columns: 32px;
-  --section-gap: 128px;
-  --section-gap-sm: 64px;
-
-  /* Shadows & Elevation */
+  /* Elevation & Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 10px 24px -4px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.14);
-  --shadow-card: 0 16px 36px -8px rgba(0, 0, 0, 0.12);
-  --shadow-float: 0 24px 60px -12px rgba(0, 0, 0, 0.35);
-  --shadow-dark-card: 0 24px 48px -12px rgba(0, 0, 0, 0.5);
-  --shadow-pill: 0 8px 20px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.09);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.12);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 20px 45px -10px rgba(0, 0, 0, 0.18);
 
-  /* Animation Timings */
-  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --dur-fast: 150ms;
-  --dur-short: 150ms;
-  --dur-base: 250ms;
-  --dur-slow: 400ms;
-  --dur-long: 400ms;
+  /* Transitions (Strict Explicit Properties - Anti-Slop Compliant) */
+  --transition-fast: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), opacity 150ms ease, background-color 150ms ease, border-color 150ms ease;
+  --transition-base: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), opacity 250ms ease, box-shadow 250ms ease, background-color 250ms ease;
+  --transition-smooth: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), opacity 380ms ease, box-shadow 380ms ease;
 
-  /* Layering Z-Indices */
-  --z-bg: 0;
-  --z-hero-bg: 1;
-  --z-hero-title: 2;
-  --z-hero-foreground: 3;
-  --z-hero-stats: 4;
-  --z-hero-nav: 10;
-  --z-overlay: 100;
-  --z-modal: 500;
+  /* Max Widths */
+  --container-max: 1360px;
+  --container-content: 1220px;
 }
